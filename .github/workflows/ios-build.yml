@@ -17,6 +17,12 @@ jobs:
         with:
           channel: stable
 
+      - name: 缓存语音模型
+        uses: actions/cache@v4
+        with:
+          path: mobile/assets/tts/*.onnx
+          key: tts-models-v1
+
       - name: 下载离线语音模型
         run: bash tools/fetch-tts-models.sh
 
