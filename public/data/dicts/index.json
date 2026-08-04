@@ -1,0 +1,341 @@
+[
+  {
+    "id": "kaoyan",
+    "name": "考研英语（词频）",
+    "description": "5530 个考研核心词汇，按真题词频从高到低排序（内置数据源）",
+    "count": 5530,
+    "difficulty": "考研",
+    "category": "考试词库",
+    "tags": [
+      "考研",
+      "词频"
+    ],
+    "source": "内置 NETEMVocabulary"
+  },
+  {
+    "id": "chuzhong",
+    "name": "初中英语",
+    "description": "初中英语词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 1987,
+    "difficulty": "初中",
+    "category": "考试词库",
+    "tags": [
+      "初中"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "gaokao",
+    "name": "高考英语",
+    "description": "高考英语词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 3743,
+    "difficulty": "高中",
+    "category": "考试词库",
+    "tags": [
+      "高中"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "cet4",
+    "name": "大学英语四级",
+    "description": "大学英语四级词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 4544,
+    "difficulty": "四级",
+    "category": "考试词库",
+    "tags": [
+      "四级"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "cet6",
+    "name": "大学英语六级",
+    "description": "大学英语六级词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 3991,
+    "difficulty": "六级",
+    "category": "考试词库",
+    "tags": [
+      "六级"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "toefl",
+    "name": "托福",
+    "description": "托福词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 10367,
+    "difficulty": "托福",
+    "category": "考试词库",
+    "tags": [
+      "托福"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "sat",
+    "name": "SAT",
+    "description": "SAT词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 4464,
+    "difficulty": "SAT",
+    "category": "考试词库",
+    "tags": [
+      "SAT"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "tem4",
+    "name": "英语专业四级（TEM-4）",
+    "description": "英语专业四级（TEM-4）词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 4340,
+    "difficulty": "专四",
+    "category": "考试词库",
+    "tags": [
+      "专四"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "tem8",
+    "name": "英语专业八级（TEM-8）",
+    "description": "英语专业八级（TEM-8）词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 12410,
+    "difficulty": "专八",
+    "category": "考试词库",
+    "tags": [
+      "专八"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "bec",
+    "name": "商务英语（BEC 中级）",
+    "description": "商务英语（BEC 中级）词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 2753,
+    "difficulty": "商务",
+    "category": "考试词库",
+    "tags": [
+      "商务"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "gre",
+    "name": "GRE 词汇",
+    "description": "GRE 词汇词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 9984,
+    "difficulty": "GRE",
+    "category": "考试词库",
+    "tags": [
+      "GRE"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "ielts",
+    "name": "雅思词汇",
+    "description": "雅思词汇词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 5275,
+    "difficulty": "雅思",
+    "category": "考试词库",
+    "tags": [
+      "雅思"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "gmat",
+    "name": "GMAT 词汇",
+    "description": "GMAT 词汇词汇表（来自 KyleBing/english-vocabulary 开源词库）",
+    "count": 3312,
+    "difficulty": "GMAT",
+    "category": "考试词库",
+    "tags": [
+      "GMAT"
+    ],
+    "source": "KyleBing/english-vocabulary"
+  },
+  {
+    "id": "it",
+    "name": "IT 通用词汇（专业）",
+    "description": "IT 通用词汇专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 1700,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "IT 通用词汇"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "ai-ml",
+    "name": "人工智能/机器学习（专业）",
+    "description": "人工智能/机器学习专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 725,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "人工智能/机器学习"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "ai-science",
+    "name": "AI for Science 科研词汇（专业）",
+    "description": "AI for Science 科研词汇专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 491,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "AI for Science 科研词汇"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "linux",
+    "name": "Linux 命令（专业）",
+    "description": "Linux 命令专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 575,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "Linux 命令"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "sql",
+    "name": "SQL 数据库（专业）",
+    "description": "SQL 数据库专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 12,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "SQL 数据库"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "python",
+    "name": "Python 内置/API（专业）",
+    "description": "Python 内置/API专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 65,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "Python 内置/API"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "java",
+    "name": "Java API（专业）",
+    "description": "Java API专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 33,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "Java API"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript API（专业）",
+    "description": "JavaScript API专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 36,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "JavaScript API"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "golang",
+    "name": "Go 内置（专业）",
+    "description": "Go 内置专业英语词汇（来自 ranbeioc/typing-word 开源词库）",
+    "count": 46,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "专业",
+      "IT",
+      "Go 内置"
+    ],
+    "source": "ranbeioc/typing-word"
+  },
+  {
+    "id": "countries",
+    "name": "世界各国（地名/首都）",
+    "description": "全球 250 个国家与地区的英文名、中文名、首都与大洲（来自 dr5hn/countries-states-cities-database）",
+    "count": 250,
+    "difficulty": "专有名词",
+    "category": "专有名词",
+    "tags": [
+      "国家",
+      "地理",
+      "地名"
+    ],
+    "source": "dr5hn/countries-states-cities-database"
+  },
+  {
+    "id": "names",
+    "name": "英语人名（常用名/姓氏）",
+    "description": "常见英语人名与姓氏，含中文译名",
+    "count": 306,
+    "difficulty": "专有名词",
+    "category": "专有名词",
+    "tags": [
+      "人名",
+      "专有名词"
+    ],
+    "source": "WordWave 内置整理"
+  },
+  {
+    "id": "geography",
+    "name": "世界地理名词",
+    "description": "大洲、海洋、河流、山脉、湖泊、沙漠、群岛等世界地理专有名词",
+    "count": 163,
+    "difficulty": "专有名词",
+    "category": "专有名词",
+    "tags": [
+      "地理",
+      "河流",
+      "山脉",
+      "海洋"
+    ],
+    "source": "WordWave 内置整理"
+  },
+  {
+    "id": "geology",
+    "name": "地质学词汇",
+    "description": "岩石矿物、构造地质、地震火山、水文地质、地层古生物等地质学常用词汇",
+    "count": 266,
+    "difficulty": "专业",
+    "category": "专业领域",
+    "tags": [
+      "地质",
+      "专业",
+      "科学"
+    ],
+    "source": "WordWave 内置整理"
+  }
+]

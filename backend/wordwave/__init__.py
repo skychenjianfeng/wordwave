@@ -1,0 +1,1 @@
+# WordWave Django project package

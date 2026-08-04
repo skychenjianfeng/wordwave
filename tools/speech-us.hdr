@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Sun, 02 Aug 2026 20:52:41 GMT
+Server: WSGIServer/0.2 CPython/3.13.2
+Content-Type: audio/wav
+Cache-Control: public, max-age=31536000, immutable
+X-Speech-Engine: piper-local
+Allow: GET, HEAD, OPTIONS
+X-Frame-Options: DENY
+Content-Length: 38956
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Vary: origin
+

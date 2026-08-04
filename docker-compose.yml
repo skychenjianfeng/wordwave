@@ -1,0 +1,72 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: wordwave-mysql
+    restart: "no"
+    environment:
+      MYSQL_DATABASE: wordwave
+      MYSQL_USER: wordwave
+      MYSQL_PASSWORD: wordwave_dev_password
+      MYSQL_ROOT_PASSWORD: wordwave_root_password
+      TZ: Asia/Shanghai
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "13307:3306"
+    volumes:
+      - wordwave-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uwordwave", "-pwordwave_dev_password"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    container_name: wordwave-redis
+    restart: "no"
+    command: redis-server --appendonly yes
+    ports:
+      - "16380:6379"
+    volumes:
+      - wordwave-redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  wordwave:
+    build: .
+    image: wordwave:django
+    container_name: wordwave
+    restart: "no"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - server/.env
+      - server/.env.django
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+    ports:
+      - "3101:8000"
+    volumes:
+      - wordwave-speech-cache:/app/server/.speech-cache
+      - wordwave-data:/app/server/data
+    command: >
+      sh -c "cd /app/backend &&
+      python manage.py migrate --noinput &&
+      python manage.py seed_dicts --data-dir ../public/data/dicts &&
+      python manage.py import_legacy --legacy-dir ../server/data &&
+      gunicorn --bind 0.0.0.0:8000 wordwave.wsgi:application"
+
+volumes:
+  wordwave-mysql-data:
+  wordwave-redis-data:
+  wordwave-speech-cache:
+  wordwave-data:

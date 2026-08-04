@@ -1,0 +1,15 @@
+node_modules
+dist
+.git
+.gitignore
+*.log
+server/.env
+server/.env.django
+server/.speech-cache
+server/data
+tools
+backend/.venv
+staticfiles
+scripts/screenshots
+scripts/e2e-verify.mjs
+README.md

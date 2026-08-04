@@ -1,0 +1,14 @@
+{
+  "AutoStart": false,
+  "DisplayedOnboarding": true,
+  "EnableDockerAI": true,
+  "InferenceCanUseGPUVariant": true,
+  "LastContainerdSnapshotterEnable": 0,
+  "LicenseTermsVersion": 2,
+  "OverrideProxyHTTP": "",
+  "OverrideProxyHTTPS": "",
+  "ProxyHTTPMode": "system",
+  "SettingsVersion": 43,
+  "UpdateInstallTime": 0,
+  "UseContainerdSnapshotter": false
+}

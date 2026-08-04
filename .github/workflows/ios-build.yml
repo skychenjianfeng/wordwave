@@ -1,0 +1,39 @@
+name: iOS Build
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: macos-14
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: 下载离线语音模型
+        run: bash tools/fetch-tts-models.sh
+
+      - name: 构建 iOS（未签名）
+        working-directory: mobile
+        run: |
+          flutter pub get
+          flutter build ios --release --no-codesign
+
+      - name: 打包未签名 ipa
+        working-directory: mobile
+        run: |
+          mkdir -p Payload
+          cp -r build/ios/iphoneos/Runner.app Payload/
+          zip -r wordwave-ios-unsigned.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wordwave-ios-unsigned
+          path: mobile/wordwave-ios-unsigned.ipa

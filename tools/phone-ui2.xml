@@ -1,0 +1,7 @@
+﻿adb.exe : cat: /sdcard/ui.xml: No such file or directory
+At line:2 char:223
++ ...  Out-String; & $adb -s 527e324d shell cat /sdcard/ui.xml 2>&1 | Out-F ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (cat: /sdcard/ui...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,51 @@
+{
+  "name": "wordwave",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "WordWave 词浪 - 百词斩风格的考研英语背单词网站",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c blue,green \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:web": "vite",
+    "dev:server": "backend\\.venv\\Scripts\\python.exe backend\\manage.py runserver 8010",
+    "build": "tsc && vite build",
+    "setup:backend": "python -m venv backend\\.venv && backend\\.venv\\Scripts\\python.exe -m pip install -r backend\\requirements.txt",
+    "fetch:dicts": "node scripts/fetch-dicts.mjs",
+    "migrate": "backend\\.venv\\Scripts\\python.exe backend\\manage.py migrate",
+    "seed:dicts": "backend\\.venv\\Scripts\\python.exe backend\\manage.py seed_dicts",
+    "db:up": "docker-compose up -d mysql redis",
+    "stack:up": "docker-compose up -d --build",
+    "stack:down": "docker-compose down",
+    "preview": "vite preview",
+    "start": "backend\\.venv\\Scripts\\python.exe backend\\manage.py runserver 8010"
+  },
+  "dependencies": {
+    "@diffusionstudio/piper-wasm": "^1.0.0",
+    "@fontsource-variable/lexend": "^5.3.0",
+    "@fontsource-variable/noto-sans-sc": "^5.3.0",
+    "@realtimex/piper-tts-web": "^1.1.1",
+    "@tanstack/react-virtual": "^3.14.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "hyphen": "^1.10.2",
+    "ipa-dict": "^1.0.3",
+    "onnxruntime-web": "1.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}
