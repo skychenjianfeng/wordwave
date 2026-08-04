@@ -3,6 +3,7 @@
 set -euo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../mobile/assets/tts" && pwd)"
+mkdir -p "$DIR"
 BASE_HF="https://huggingface.co/csukuangfj"
 BASE_MIRROR="https://hf-mirror.com/csukuangfj"
 
